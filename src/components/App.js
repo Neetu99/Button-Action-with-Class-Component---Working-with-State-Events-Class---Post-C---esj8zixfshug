@@ -7,6 +7,10 @@ class App extends Component {
     this.state = {
       showPara: false
     };
+	    
+//  we are binding here "this" keyword to the onclick handlerClick function. Why we are binding ,, becoz if we do not bind "this " keyword to HandleClick function 
+//  when we run and click on button after clicking that will show us to "This" keyword is undifind inSide ===> this.setState({}).. whe need to bind HandleClick with  
+//   the Obj of ==>"this".
     this.handleClick = this.handleClick.bind(this);
 	};
  handleClick() {
